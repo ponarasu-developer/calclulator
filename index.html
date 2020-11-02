@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calculator</title>
+    <link rel="stylesheet" href="./calculator.css" />
+  </head>
+  <body>
+    <div id="heading"><h1>SIMPLE CALCULATOR</h1></div>
+
+    <div id="first number div" class="div">
+      <input
+        type="number"
+        name="firstnumber"
+        class="input"
+        id="firstnumber"
+        placeholder="Enter the first number"
+      />
+    </div>
+    <div id="second number div" class="div">
+      <input
+        type="number"
+        name="secondnumber"
+        class="input"
+        id="secondnumber"
+        placeholder="Enter The Second Number"
+      />
+    </div>
+
+    <br />
+    <div id="button" class="div">
+      <input
+        type="button"
+        value="plus"
+        id="plus"
+        class="button"
+        onclick="add()"
+      />
+      <input
+        type="button"
+        value="minus"
+        id="minus"
+        class="button"
+        onclick="sub()"
+      />
+      <input
+        type="button"
+        value="multiply"
+        id="multiply"
+        class="button"
+        onclick="mul()"
+      />
+      <input
+        type="button"
+        value="division"
+        id="division"
+        class="button"
+        onclick="division()"
+      />
+      <input
+        type="button"
+        value="reminder"
+        id="reminder"
+        class="button"
+        onclick="reminder
+      ()"
+      />
+    </div>
+    <br />
+    <div id="result">
+      <p id="answer">The Result Is:</p>
+    </div>
+
+    <div id="reload">
+      <button id="reset" onclick="reload()">reload</button>
+    </div>
+    <script src="./caluculator.js"></script>
+  </body>
+</html>
